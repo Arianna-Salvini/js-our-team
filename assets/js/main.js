@@ -55,16 +55,17 @@ for (let i = 0; i < team.length; i++) {
     // };
 
     //- stampare nell'elemento della DOM le proprietà degli object "member" in stringa 
+    // - trasformare la stringa foto in una immagine effettiva
     const memberCardMarkup = `
     <div class="col">
         <div class="card">
-            <p> ${member.image}</p>
+            <img src="./assets/img/${member.image}" alt="Profile image of member team">
             <h3> ${member.name}</h3>
             <p> ${member.role}</p>
         </div>
     </div>`
 
-pEl.innerHTML += (memberCardMarkup)
+    pEl.innerHTML += (memberCardMarkup)
 
 }
 

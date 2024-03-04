@@ -31,6 +31,7 @@ stampare le stesse informazioni su DOM sottoforma di stringhe
  - querySelector
  - innerHTML 
  - += (per ogni elemento "member di "team")
+ - markup
 
 ## BONUS 1:
 trasformare la stringa foto in una immagine effettiva
