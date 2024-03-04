@@ -58,15 +58,16 @@ for (let i = 0; i < team.length; i++) {
     // - trasformare la stringa foto in una immagine effettiva
     const memberCardMarkup = `
     <div class="col">
-        <div class="card">
-            <img src="./assets/img/${member.image}" alt="Profile image of member team">
-            <h3> ${member.name}</h3>
-            <p> ${member.role}</p>
+        <div class="card my-4 shadow mb-5 bg-body rounded">
+        <img class="card-img-top" src="./assets/img/${member.image}" alt="Profile image of member team">
+            <div class="p-3 text-center">
+                <h3> ${member.name}</h3>
+                <p> ${member.role}</p
+            </div>
         </div>
     </div>`
 
     pEl.innerHTML += (memberCardMarkup)
-
 }
 
 
