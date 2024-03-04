@@ -34,19 +34,38 @@ const team = [
     },
 ];
 
+// - prendere l'elemento e importarlo in una costante in js
+const pEl = document.querySelector('.row')
+// console.log( pEl);
 //  - Inserisco l'array di ogetti in un ciclo for
-//      - Ogni oggetto dell'array lo passo nel ciclo for-in
-//          - Stampo in console i valori dell'oggetto
-
 for (let i = 0; i < team.length; i++) {
+    //- Ogni oggetto (salvato in una costante) dell'array
     const member = team[i];
     // console.log(member);
+    // console.log(member.image);
+    // console.log(member.name);
+    // console.log(member.role);
 
-    for (const key in member) {
-        console.log(member[key]);
-    };
-    
+    // - Iteroro nel ciclo for-in 
+    // for (const key in member) {
+    //     // - Stampo in console i valori dell'oggetto
+    //     // console.log(member[key]);
+    //     memberInfos = String(member[key])
+    //     console.log(memberInfos); 
+    // };
+
+    //- stampare nell'elemento della DOM le proprietà degli object "member" in stringa 
+    const memberCardMarkup = `
+    <div class="col">
+        <div class="card">
+            <p> ${member.image}</p>
+            <h3> ${member.name}</h3>
+            <p> ${member.role}</p>
+        </div>
+    </div>`
+
+pEl.innerHTML += (memberCardMarkup)
+
 }
 
-   
-    
+

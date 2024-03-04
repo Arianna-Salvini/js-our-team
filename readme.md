@@ -11,17 +11,26 @@ stampare su console le informazioni di nome, ruolo e la stringa della foto
 - STEP 2:
      - Inserisco l'array di ogetti in un ciclo for
          - Ogni oggetto dell'array lo passo nel ciclo for-in
-             - Stamo in console i valori dell'oggetto
+             - Stampo in console i valori dell'oggetto
 
 # MILESTONE 2:
 stampare le stesse informazioni su DOM sottoforma di stringhe
+- STEP 3:
+ - creare un elemento nella DOM
+ - prendere l'elemento e importarlo in una costante in js
+ 
+    - stampare nell'elemento della DOM le proprietà degli object "member" in stringa
 
 * Tools :
  - const/let
  - object
  - array
+ - for
  - for-in
- - 
+ - markUp
+ - querySelector
+ - innerHTML 
+ - += (per ogni elemento "member di "team")
 
 ## BONUS 1:
 trasformare la stringa foto in una immagine effettiva
